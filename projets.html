@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets – Erine Dumez</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/projets.css">
 </head>
 
 <body>
@@ -13,12 +15,13 @@
     <!-- EN-TÊTE -->
     <header id="haut">
 
-        <nav aria-label="Navigation principale">
+        <nav>
             <span><strong>Erine Dumez</strong></span>
 
             <a href="index.html">Accueil</a>
             <a href="cv.html">CV</a>
             <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
     </header>
@@ -29,7 +32,7 @@
         <h1>Mes projets</h1>
 
         <!-- PROJET 1 -->
-        <article>
+        <article class="card">
 
             <h2>Création d'un site web</h2>
 
@@ -44,7 +47,7 @@
         </article>
 
         <!-- PROJET 2 -->
-        <article>
+        <article class="card">
 
             <h2>Création graphique</h2>
 
@@ -58,7 +61,7 @@
         </article>
 
         <!-- PROJET 3 -->
-        <article>
+        <article class="card">
 
             <h2>Refonte d'une identité visuelle</h2>
 
@@ -69,10 +72,28 @@
                 ainsi que la réalisation d'une charte graphique.
             </p>
 
+            <figure>
+                <img class="Ancien-Logo-Association" src="Images/Projets/LogoAssociation/AncienLogoAssociation.png"
+                    alt="Ancien logo de l'association">
+                <figcaption>Ancien logo de l'association</figcaption>
+            </figure>
+
+            <figure>
+                <img class="Nouveau-Logo-Association" src="Images/Projets/LogoAssociation/NouveauLogoAssociation.png"
+                    alt="Nouveau logo de l'association">
+                <figcaption>Nouveau logo de l'association</figcaption>
+            </figure>
+
+            <figure>
+                <img class="Anciens-Logos-Secteurs-Association"
+                    src="Images/Projets/LogosAssociationSecteurs/AnciensLogosSecteursAssociation.pdf" alt="Anciens logos des secteurs de l'association">
+                <figcaption>Anciens logos des secteurs de l'association</figcaption>
+            </figure>
+
         </article>
 
         <!-- PROJET 4 -->
-        <article>
+        <article class="card">
 
             <h2>Communication digitale</h2>
 
@@ -97,8 +118,7 @@
         <address>
             &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
             <br>
-            Contact :
-            <a href="mailto:Erinedumez@hotmail.com">Me contacter</a>
+            <a href="contact.html">Me contacter</a>
             <br>
             <a href="#haut">Haut de page</a>
         </address>

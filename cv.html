@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV – Erine Dumez</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/cv.css">
 </head>
 
 <body>
@@ -13,12 +15,13 @@
     <!-- EN-TÊTE -->
     <header id="haut">
 
-        <nav aria-label="Navigation principale">
+        <nav>
             <span><strong>Erine Dumez</strong></span>
 
             <a href="index.html">Accueil</a>
             <a href="cv.html">CV</a>
             <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
     </header>
@@ -28,8 +31,15 @@
 
         <h1>Mon CV</h1>
 
+
+        <figure>
+            <img class="photo-profil" src="Images/CV/ErineDumez.png"
+                alt="Portrait d'Erine Dumez, étudiante en DEUST Webmaster et Métiers de l'Internet">
+            <figcaption>Portrait d'Erine Dumez, étudiante en DEUST Webmaster et Métiers de l'Internet</figcaption>
+        </figure>
+
         <!-- FORMATIONS -->
-        <section>
+        <section class="card" id="Formations">
 
             <h2>Formations</h2>
 
@@ -87,7 +97,7 @@
         </section>
 
         <!-- EXPÉRIENCES -->
-        <section>
+        <section class="card">
 
             <h2>Expériences</h2>
 
@@ -128,7 +138,7 @@
         </section>
 
         <!-- COMPÉTENCES -->
-        <section>
+        <section class="card">
 
             <h2>Compétences</h2>
 
@@ -169,8 +179,7 @@
         <address>
             &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
             <br>
-            Contact :
-            <a href="mailto:Erinedumez@hotmail.com">Me contacter</a>
+            <a href="contact.html">Me contacter</a>
             <br>
             <a href="#haut">Haut de page</a>
         </address>
