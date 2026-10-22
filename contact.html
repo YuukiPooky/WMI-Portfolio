@@ -1,93 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact – Erine Dumez</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/contact.css">
-</head>
+    <link rel="stylesheet" href="CSS/variables.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <script src="navigation.js" defer></script>
+  </head>
 
-<body>
-
-    <!-- EN-TÊTE -->
-    <header id="haut">
-
-        <nav>
-            <span><strong>Erine Dumez</strong></span>
-
+  <body>
+    <div class="portfolio-area">
+      <img
+        class="portfolio-texture"
+        src="Images/Général/Vagues.png"
+        alt=""
+        aria-hidden="true"
+      />
+      <!-- EN-TÊTE -->
+      <header id="haut">
+        <section class="top-bar">
+          <nav class="top-links" aria-label="Navigation principale">
             <a href="index.html">Accueil</a>
             <a href="cv.html">CV</a>
+            <span class="logo">Erine Dumez</span>
             <a href="projets.html">Projets</a>
             <a href="contact.html">Contact</a>
-        </nav>
+          </nav>
+        </section>
+      </header>
 
-    </header>
+      <section class="portfolio-banner contact-banner" aria-label="Contact">
+        <h1>Me contacter</h1>
+      </section>
+    </div>
 
     <!-- CONTENU PRINCIPAL -->
-    <main>
+    <main class="contact-page">
+      <p>
+        Une question, une proposition de projet ou une demande de stage ?
+        Remplissez le formulaire ci-dessous, je vous répondrai dès que possible.
+      </p>
 
-        <h1>Me contacter</h1>
-
+      <form
+        class="formulaire-contact"
+        action="mailto:Erinedumez@hotmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <!-- NOM -->
         <p>
-            Une question, une proposition de projet ou une demande de stage ?
-            Remplissez le formulaire ci-dessous, je vous répondrai dès que possible.
+          <label for="nom">Nom et prénom</label><br />
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            placeholder="Ex : Marie Dupont"
+            required
+          />
         </p>
 
-        <form class="formulaire-contact" action="mailto:Erinedumez@hotmail.com" method="post" enctype="text/plain">
-            <!-- NOM -->
-            <p>
-                <label for="nom">Nom et prénom</label><br>
-                <input type="text" id="nom" name="nom" placeholder="Ex : Marie Dupont" required>
-            </p>
+        <!-- EMAIL -->
+        <p>
+          <label for="email">Adresse e-mail</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ex : marie.dupont@mail.fr"
+            required
+          />
+        </p>
 
-            <!-- EMAIL -->
-            <p>
-                <label for="email">Adresse e-mail</label><br>
-                <input type="email" id="email" name="email" placeholder="Ex : marie.dupont@mail.fr" required>
-            </p>
+        <!-- MENU DÉROULANT -->
+        <p>
+          <label for="sujet">Objet de votre message</label><br />
+          <select id="sujet" name="sujet" required>
+            <option value="">-- Choisissez un objet --</option>
+            <option value="projet-web">Projet de site web</option>
+            <option value="projet-graphique">
+              Projet de création graphique
+            </option>
+            <option value="stage-emploi">Stage ou emploi</option>
+            <option value="autre">Autre demande</option>
+          </select>
+        </p>
 
-            <!-- MENU DÉROULANT -->
-            <p>
-                <label for="sujet">Objet de votre message</label><br>
-                <select id="sujet" name="sujet" required>
-                    <option value="">-- Choisissez un objet --</option>
-                    <option value="projet-web">Projet de site web</option>
-                    <option value="projet-graphique">Projet de création graphique</option>
-                    <option value="stage-emploi">Stage ou emploi</option>
-                    <option value="autre">Autre demande</option>
-                </select>
-            </p>
+        <!-- MESSAGE -->
+        <p>
+          <label for="message">Votre message</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            cols="40"
+            placeholder="Écrivez votre message ici..."
+            required
+          ></textarea>
+        </p>
 
-            <!-- MESSAGE -->
-            <p>
-                <label for="message">Votre message</label><br>
-                <textarea id="message" name="message" rows="6" cols="40" placeholder="Écrivez votre message ici..."
-                    required></textarea>
-            </p>
-
-            <!-- BOUTONS -->
-            <p>
-                <button type="submit">Envoyer</button>
-                <button type="reset">Effacer</button>
-            </p>
-
-        </form>
-
+        <!-- BOUTONS -->
+        <p>
+          <button type="submit">Envoyer</button>
+          <button type="reset">Effacer</button>
+        </p>
+      </form>
     </main>
 
     <!-- PIED DE PAGE -->
     <footer>
-
-        <address>
-            &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
-            <br>
-            <a href="#haut">Haut de page</a>
-        </address>
-
+      <address>
+        &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
+        <br />
+        <a href="#haut">Haut de page</a>
+      </address>
     </footer>
-
-</body>
-
+  </body>
 </html>

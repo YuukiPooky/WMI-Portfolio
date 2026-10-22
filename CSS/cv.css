@@ -1,6 +1,27 @@
+.cv-intro {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cv-intro h1 {
+    margin: 0;
+}
+
+.cv-intro figure {
+    margin: 0;
+}
+
 .photo-profil {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .cv-intro {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }

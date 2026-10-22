@@ -1,3 +1,18 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-inline: clamp(1rem, 3vw, 2rem);
+}
+
+.projects-grid .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+
 .Ancien-Logo-Association {
     width: 150px;
     max-width: 100%;
