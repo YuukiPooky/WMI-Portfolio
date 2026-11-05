@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="CSS/variables.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/cv.css" />
-    <script src="navigation.js" defer></script>
   </head>
 
   <body>
@@ -33,32 +32,40 @@
       </header>
 
       <section class="portfolio-banner cv-banner" aria-label="Présentation">
-        <h1>Assistante en<br />communication</h1>
+        <div class="cv-banner-content">
+          <figure>
+            <img
+              class="photo-profil"
+              src="Images/CV/ErineDumez.png"
+              alt="Portrait d'Erine Dumez, étudiante en DEUST Webmaster et Métiers de l'Internet"
+            />
+          </figure>
+          <h1>Assistante en<br />communication</h1>
+        </div>
       </section>
     </div>
 
     <!-- CONTENU PRINCIPAL -->
-    <main>
-      <section class="cv-intro">
-        <figure>
-          <img
-            class="photo-profil"
-            src="Images/CV/ErineDumez.png"
-            alt="Portrait d'Erine Dumez, étudiante en DEUST Webmaster et Métiers de l'Internet"
-          />
-          <figcaption>
-            Portrait d'Erine Dumez, étudiante en DEUST Webmaster et Métiers de
-            l'Internet
-          </figcaption>
-        </figure>
-      </section>
+    <main class="page-content-panel cv-main">
+      <p class="cv-summary">
+        Étudiante en 1re année de DEUST Webmaster et Métiers de l’Internet, je
+        développe des compétences en création graphique, communication digitale
+        et conception web. Je recherche une alternance afin de mettre en
+        pratique mes connaissances au sein d’une entreprise.
+      </p>
 
       <!-- FORMATIONS -->
-      <section class="card">
-        <h2>Formations</h2>
+      <section class="cv-section cv-section--markers" aria-labelledby="formations-title">
+        <h2 class="cv-section-title" id="formations-title">Formations</h2>
+        <div class="cv-section-content card">
+          <div class="cv-section-inner">
 
         <h3>DEUST Webmaster et Métiers de l’Internet</h3>
-        <p>Université du Littoral Côte d’Opale | Calais | 2026 – 2028</p>
+        <p>
+          <strong>
+            Université du Littoral Côte d’Opale | Calais | 2026 – 2028
+          </strong>
+        </p>
         <ul>
           <li>Création de sites web</li>
           <li>Bases du développement web</li>
@@ -67,7 +74,11 @@
         </ul>
 
         <h3>DSP Assistant Designer Graphique Multimédia</h3>
-        <p>Université du Littoral Côte d’Opale | Calais | 2025 – 2026</p>
+        <p>
+          <strong>
+            Université du Littoral Côte d’Opale | Calais | 2025 – 2026
+          </strong>
+        </p>
         <ul>
           <li>Maîtrise de la suite Adobe</li>
           <li>Création graphique</li>
@@ -77,7 +88,11 @@
         </ul>
 
         <h3>Licence Humanités - Culture et Médias</h3>
-        <p>Université du Littoral Côte d’Opale | Dunkerque | 2024 – 2025</p>
+        <p>
+          <strong>
+            Université du Littoral Côte d’Opale | Dunkerque | 2024 – 2025
+          </strong>
+        </p>
         <ul>
           <li>Analyse et synthèse en littérature</li>
           <li>Philosophie</li>
@@ -85,28 +100,41 @@
         </ul>
 
         <h3>DU Tremplin</h3>
-        <p>Université du Littoral Côte d’Opale | Dunkerque | 2023 – 2024</p>
+        <p>
+          <strong>
+            Université du Littoral Côte d’Opale | Dunkerque | 2023 – 2024
+          </strong>
+        </p>
         <ul>
           <li>Réorientation</li>
           <li>Recherche de projet professionnel</li>
         </ul>
 
         <h3>Baccalauréat général</h3>
-        <p>Lycée du Noordover | Grande-Synthe | 2020 – 2023</p>
+        <p>
+          <strong>Lycée du Noordover | Grande-Synthe | 2020 – 2023</strong>
+        </p>
         <ul>
           <li>Arts plastiques</li>
           <li>HLP : Humanités, Littérature et Philosophie</li>
         </ul>
+          </div>
+        </div>
       </section>
 
       <!-- EXPÉRIENCES -->
-      <section class="card">
-        <h2>Expériences</h2>
+      <section class="cv-section cv-section--markers" aria-labelledby="experiences-title">
+        <h2 class="cv-section-title" id="experiences-title">Expériences</h2>
+        <div class="cv-section-content card">
+          <div class="cv-section-inner">
 
         <h3>Bar du Camping des Dunes</h3>
         <p>
-          Employée polyvalente | Gravelines | Du 09/07/2025 au 31/08/2025 puis
-          du 03/07/2026 au 28/08/2026
+          <strong>
+            Employée polyvalente | Gravelines |
+            Du 09/07/2025 au 31/08/2025<br />
+            puis du 03/07/2026 au 28/08/2026
+          </strong>
         </p>
         <ul>
           <li>Préparation des boissons</li>
@@ -115,7 +143,11 @@
         </ul>
 
         <h3>Association Cœur de Ville</h3>
-        <p>Stage | Grand-Fort-Philippe | Du 23/02/2026 au 22/06/2026</p>
+        <p>
+          <strong>
+            Stage | Grand-Fort-Philippe | Du 23/02/2026 au 22/06/2026
+          </strong>
+        </p>
         <ul>
           <li>Refonte de l’identité visuelle de l’association</li>
           <li>Modernisation du logo de l’association</li>
@@ -124,17 +156,25 @@
         </ul>
 
         <h3>Restaurant Le 116</h3>
-        <p>Employée polyvalente | Gravelines | Du 28/06/2024 au 31/07/2024</p>
+        <p>
+          <strong>
+            Employée polyvalente | Gravelines | Du 28/06/2024 au 31/07/2024
+          </strong>
+        </p>
         <ul>
           <li>Prise de commandes</li>
           <li>Conseil clients</li>
           <li>Entretien du restaurant</li>
         </ul>
+          </div>
+        </div>
       </section>
 
       <!-- COMPÉTENCES -->
-      <section class="card">
-        <h2>Compétences</h2>
+      <section class="cv-section cv-section--markers" aria-labelledby="competences-title">
+        <h2 class="cv-section-title" id="competences-title">Compétences</h2>
+        <div class="cv-section-content card">
+          <div class="cv-section-inner">
 
         <h3>Compétences web</h3>
         <ul>
@@ -158,6 +198,8 @@
           <li>Création de contenus visuels</li>
           <li>Conception de supports de communication</li>
         </ul>
+          </div>
+        </div>
       </section>
     </main>
 
