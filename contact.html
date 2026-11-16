@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact – Erine Dumez</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="CSS/variables.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
@@ -19,35 +19,37 @@
         aria-hidden="true"
       />
       <!-- EN-TÊTE -->
-      <header id="haut" class="bg-slate-900 p-4 text-white shadow-md">
-        <section class="top-bar">
+      <header id="haut" class="p-0">
+        <section
+          class="top-bar flex flex-wrap items-center justify-center gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
+        >
           <nav
-            class="top-links mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-2 md:justify-between md:gap-6"
+            class="top-links flex flex-wrap items-center justify-center gap-1 md:flex-1 md:flex-nowrap md:gap-[clamp(0.5rem,1.5vw,1.5rem)]"
             aria-label="Navigation principale"
           >
-            <a class="rounded px-3 py-2 font-semibold transition-colors hover:text-blue-400 focus-visible:bg-slate-700" href="index.html">Accueil</a>
-            <a class="rounded px-3 py-2 font-semibold transition-colors hover:text-blue-400 focus-visible:bg-slate-700" href="cv.html">CV</a>
-            <span class="logo order-first w-full text-center text-xl font-bold italic tracking-wide md:order-none md:w-auto">Erine Dumez</span>
-            <a class="rounded px-3 py-2 font-semibold transition-colors hover:text-blue-400 focus-visible:bg-slate-700" href="projets.html">Projets</a>
-            <a class="rounded px-3 py-2 font-semibold transition-colors hover:text-blue-400 focus-visible:bg-slate-700" href="contact.html">Contact</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="index.html">Accueil</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="cv.html">CV</a>
+            <span class="logo order-first m-0 w-full text-center text-xl font-bold italic text-white md:order-none md:mx-[clamp(1rem,3vw,3rem)] md:w-auto">Erine Dumez</span>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="projets.html">Projets</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="contact.html">Contact</a>
           </nav>
         </section>
       </header>
 
       <section class="portfolio-banner contact-banner" aria-label="Contact">
-        <h1 class="text-4xl font-bold tracking-wide text-black">Me contacter</h1>
+        <h1 class="text-[3.5rem] font-bold text-black">Me contacter</h1>
       </section>
     </div>
 
     <!-- CONTENU PRINCIPAL -->
-    <main class="contact-page page-content-panel">
-      <p>
-        Une question, une proposition de projet ou une demande de stage ?
-        Remplissez le formulaire ci-dessous, je vous répondrai dès que possible.
+    <main class="contact-page page-content-panel [&+footer]:mt-0">
+      <p class="font-semibold">
+        Une question ou une idée de projet ? Envoyez-moi votre message via le
+        formulaire ci-dessous ; je vous répondrai dès que possible.
       </p>
 
       <section class="contact-form-card" aria-labelledby="contact-form-title">
-        <h2 class="contact-form-title text-2xl font-bold tracking-wide" id="contact-form-title">
+        <h2 class="contact-form-title text-2xl font-bold" id="contact-form-title">
           Formulaire de contact
         </h2>
         <form
@@ -63,7 +65,7 @@
               type="text"
               id="nom"
               name="nom"
-              placeholder="Ex : Marie Dupont"
+              placeholder="Ex : Vincent Vanneste"
               required
             />
           </p>
@@ -75,7 +77,7 @@
               type="email"
               id="email"
               name="email"
-              placeholder="Ex : marie.dupont@mail.fr"
+              placeholder="Ex : vincent.vanneste@mail.fr"
               required
             />
           </p>
@@ -89,7 +91,6 @@
               <option value="projet-graphique">
                 Projet de création graphique
               </option>
-              <option value="stage-emploi">Stage ou emploi</option>
               <option value="autre">Autre demande</option>
             </select>
           </p>
@@ -117,11 +118,11 @@
     </main>
 
     <!-- PIED DE PAGE -->
-    <footer class="bg-slate-900 p-4 text-center text-white">
+    <footer class="mt-8 bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] p-6 text-center text-white">
       <address>
         &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
         <br />
-        <a class="transition-colors hover:text-blue-400" href="#haut">Haut de page</a>
+        <a class="text-white transition-colors hover:text-blue-400" href="#haut">Haut de page</a>
       </address>
     </footer>
   </body>

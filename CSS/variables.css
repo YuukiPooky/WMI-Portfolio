@@ -1,8 +1,8 @@
 :root {
   --color-neutral-white: #ffffff;
   --color-banner-title: #000000;
-  --color-body-text: #1f2937;
-  --color-heading-text: #16324f;
+  --color-body-text: #000000;
+  --color-heading-text: #000000;
   --color-default-border: #cbd5e1;
   --color-brand-gradient-start: #a30b37;
   --color-brand-gradient-end: #d7124b;
@@ -11,5 +11,6 @@
   --color-navigation-shadow: rgb(80 0 25 / 32%);
   --color-portfolio-background-start: #f7eff0;
   --color-portfolio-background-end: #ffcaca;
+  --shadow-panel: 5px 6px 12px rgb(0 0 0 / 18%);
   --font-family-body: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
