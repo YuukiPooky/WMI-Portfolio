@@ -30,57 +30,6 @@ p {
   margin: 0 0 1rem;
 }
 
-header {
-  padding: 0;
-}
-
-.top-bar {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 9px 25px;
-  border-radius: 0 0 1.5rem 1.5rem;
-  background: linear-gradient(
-    to right,
-    var(--color-brand-gradient-start),
-    var(--color-brand-gradient-end)
-  );
-  box-shadow: 0 5px 12px var(--color-navigation-shadow);
-}
-
-.logo {
-  order: -1;
-  width: 100%;
-  margin: 0;
-  color: var(--color-neutral-white);
-  font-size: 1.25rem;
-  font-weight: 700;
-  font-style: italic;
-  text-align: center;
-}
-
-.top-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-}
-
-.top-links a {
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.25rem;
-  color: var(--color-neutral-white);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.top-links a:focus-visible {
-  background-color: var(--color-brand-focus-background);
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -152,8 +101,6 @@ img {
   left: 50%;
   margin: 0;
   width: 90%;
-  color: var(--color-banner-title);
-  font-size: 2.75rem;
   line-height: 1;
   font-style: italic;
   text-align: center;
@@ -200,37 +147,6 @@ img {
 
 footer {
   margin-top: 2rem;
-  padding: 1.5rem;
-  background: linear-gradient(
-    to right,
-    var(--color-brand-gradient-start),
-    var(--color-brand-gradient-end)
-  );
-  color: var(--color-neutral-white);
-  text-align: center;
-}
-
-footer a {
-  color: var(--color-neutral-white);
-}
-
-@media (min-width: 48rem) {
-  .top-bar {
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  .logo {
-    order: 0;
-    width: auto;
-    margin-inline: clamp(1rem, 3vw, 3rem);
-  }
-
-  .top-links {
-    flex: 1;
-    flex-wrap: nowrap;
-    gap: clamp(0.5rem, 1.5vw, 1.5rem);
-  }
 }
 
 @media (max-width: 48rem) {

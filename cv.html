@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV – Erine Dumez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="CSS/variables.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/cv.css" />
@@ -19,14 +20,17 @@
         aria-hidden="true"
       />
       <!-- EN-TÊTE -->
-      <header id="haut">
+      <header id="haut" class="bg-slate-900 p-4 text-white shadow-md">
         <section class="top-bar">
-          <nav class="top-links" aria-label="Navigation principale">
-            <a href="index.html">Accueil</a>
-            <a href="cv.html">CV</a>
-            <span class="logo">Erine Dumez</span>
-            <a href="projets.html">Projets</a>
-            <a href="contact.html">Contact</a>
+          <nav
+            class="top-links mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-2 md:justify-between md:gap-6"
+            aria-label="Navigation principale"
+          >
+            <a class="rounded px-3 py-2 font-semibold transition-colors hover:text-blue-400 focus-visible:bg-slate-700" href="index.html">Accueil</a>
+            <a class="rounded px-3 py-2 font-semibold transition-colors hover:text-blue-400 focus-visible:bg-slate-700" href="cv.html">CV</a>
+            <span class="logo order-first w-full text-center text-xl font-bold italic tracking-wide md:order-none md:w-auto">Erine Dumez</span>
+            <a class="rounded px-3 py-2 font-semibold transition-colors hover:text-blue-400 focus-visible:bg-slate-700" href="projets.html">Projets</a>
+            <a class="rounded px-3 py-2 font-semibold transition-colors hover:text-blue-400 focus-visible:bg-slate-700" href="contact.html">Contact</a>
           </nav>
         </section>
       </header>
@@ -40,7 +44,7 @@
               alt="Portrait d'Erine Dumez, étudiante en DEUST Webmaster et Métiers de l'Internet"
             />
           </figure>
-          <h1>Assistante en<br />communication</h1>
+          <h1 class="text-4xl font-bold tracking-wide text-black">Assistante en<br />communication</h1>
         </div>
       </section>
     </div>
@@ -56,7 +60,7 @@
 
       <!-- FORMATIONS -->
       <section class="cv-section cv-section--markers" aria-labelledby="formations-title">
-        <h2 class="cv-section-title" id="formations-title">Formations</h2>
+        <h2 class="cv-section-title text-2xl font-bold tracking-wide" id="formations-title">Formations</h2>
         <div class="cv-section-content card">
           <div class="cv-section-inner">
 
@@ -124,7 +128,7 @@
 
       <!-- EXPÉRIENCES -->
       <section class="cv-section cv-section--markers" aria-labelledby="experiences-title">
-        <h2 class="cv-section-title" id="experiences-title">Expériences</h2>
+        <h2 class="cv-section-title text-2xl font-bold tracking-wide" id="experiences-title">Expériences</h2>
         <div class="cv-section-content card">
           <div class="cv-section-inner">
 
@@ -172,7 +176,7 @@
 
       <!-- COMPÉTENCES -->
       <section class="cv-section cv-section--markers" aria-labelledby="competences-title">
-        <h2 class="cv-section-title" id="competences-title">Compétences</h2>
+        <h2 class="cv-section-title text-2xl font-bold tracking-wide" id="competences-title">Compétences</h2>
         <div class="cv-section-content card">
           <div class="cv-section-inner">
 
@@ -204,7 +208,7 @@
     </main>
 
     <!-- PIED DE PAGE -->
-    <footer>
+    <footer class="bg-slate-900 p-4 text-center text-white">
       <p>
         <strong>Merci d'avoir consulté mon CV.</strong>
       </p>
@@ -212,9 +216,9 @@
       <address>
         &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
         <br />
-        <a href="contact.html">Me contacter</a>
+        <a class="transition-colors hover:text-blue-400" href="contact.html">Me contacter</a>
         <br />
-        <a href="#haut">Haut de page</a>
+        <a class="transition-colors hover:text-blue-400" href="#haut">Haut de page</a>
       </address>
     </footer>
   </body>
