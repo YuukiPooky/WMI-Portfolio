@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact – Erine Dumez</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="CSS/variables.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
+    <script src="navigation.js" defer></script>
   </head>
 
   <body>
@@ -21,23 +22,23 @@
       <!-- EN-TÊTE -->
       <header id="haut" class="p-0">
         <section
-          class="top-bar flex flex-wrap items-center justify-center gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
+          class="top-bar center flex-wrap gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
         >
           <nav
             class="top-links flex flex-wrap items-center justify-center gap-1 md:flex-1 md:flex-nowrap md:gap-[clamp(0.5rem,1.5vw,1.5rem)]"
             aria-label="Navigation principale"
           >
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="index.html">Accueil</a>
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="cv.html">CV</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="index.html">Accueil</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="cv.html">CV</a>
             <span class="logo order-first m-0 w-full text-center text-xl font-bold italic text-white md:order-none md:mx-[clamp(1rem,3vw,3rem)] md:w-auto">Erine Dumez</span>
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="projets.html">Projets</a>
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="contact.html">Contact</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="projets.html">Projets</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="contact.html">Contact</a>
           </nav>
         </section>
       </header>
 
       <section class="portfolio-banner contact-banner" aria-label="Contact">
-        <h1 class="text-[3.5rem] font-bold text-black">Me contacter</h1>
+        <h1 class="text-[3.5rem] font-bold text-black tracking-wide">Me contacter</h1>
       </section>
     </div>
 
@@ -49,7 +50,7 @@
       </p>
 
       <section class="contact-form-card" aria-labelledby="contact-form-title">
-        <h2 class="contact-form-title text-2xl font-bold" id="contact-form-title">
+        <h2 class="contact-form-title text-2xl font-bold tracking-wide" id="contact-form-title">
           Formulaire de contact
         </h2>
         <form
@@ -110,8 +111,8 @@
 
           <!-- BOUTONS -->
           <p>
-            <button type="submit">Envoyer</button>
-            <button type="reset">Effacer</button>
+            <button class="btn" type="submit">Envoyer</button>
+            <button class="btn" type="reset">Effacer</button>
           </p>
         </form>
       </section>
@@ -122,7 +123,7 @@
       <address>
         &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
         <br />
-        <a class="text-white transition-colors hover:text-blue-400" href="#haut">Haut de page</a>
+        <a class="text-white transition-colors hover:text-[var(--color-portfolio-background-end)]" href="#haut">Haut de page</a>
       </address>
     </footer>
   </body>

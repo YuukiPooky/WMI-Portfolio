@@ -4,6 +4,7 @@
   top: var(--banner-title-center);
   left: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -16,13 +17,12 @@
   position: static;
   width: auto;
   margin: 0;
-  text-align: left;
+  text-align: center;
   transform: none;
 }
 
 .cv-banner-content figure {
   margin: 0;
-  text-align: center;
 }
 
 .cv-banner-content figcaption {
@@ -32,37 +32,34 @@
 }
 
 .photo-profil {
-  width: 14rem;
+  width: 7rem;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
 }
 
-@media (max-width: 48rem) {
+@media (min-width: 48rem) {
   .cv-banner-content {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .cv-banner-content h1 {
-    text-align: center;
+    text-align: left;
   }
 
   .photo-profil {
-    width: 7rem;
+    width: 14rem;
   }
 }
 
 .cv-summary {
-  box-sizing: border-box;
   width: calc(100% - 2rem);
   max-width: 38rem;
   margin: 2rem auto 0;
   color: var(--color-neutral-white);
-  text-align: justify;
 }
 
 .cv-section {
-  box-sizing: border-box;
   width: calc(100% - 2rem);
   max-width: 38rem;
   margin: 3.5rem auto;
@@ -72,35 +69,12 @@
   margin-bottom: 0;
 }
 
-.cv-section-title {
-  background-color: var(--color-brand-gradient-end);
-  color: var(--color-neutral-white);
-}
-
-.cv-section-content.card {
-  margin: 0;
-  padding-block: 1.5rem;
-  padding-inline: 2.25rem;
-  border-radius: 0 0 0.5rem 0.5rem;
-}
-
-.cv-section-inner {
-  width: fit-content;
-  max-width: 100%;
-  margin-inline: auto;
-  text-align: left;
-}
-
 .cv-section-content h3 {
   margin: 2rem 0 0.5rem;
 }
 
 .cv-section-inner p strong {
   font-weight: 600;
-}
-
-.cv-section-inner > :first-child {
-  margin-block-start: 0;
 }
 
 .cv-section--markers .cv-section-content h3 {
@@ -122,8 +96,4 @@
 .cv-section-content ul {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
-}
-
-.cv-section-inner > :last-child {
-  margin-block-end: 0;
 }

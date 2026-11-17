@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-marque: #e11d48;
+  --font-titre: "Poppins", sans-serif;
+}
+
+@utility ombre-nette {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+@layer base {
+  h2 {
+    @apply text-2xl font-bold text-black;
+  }
+}
+
+@layer components {
+  .center {
+    @apply flex items-center justify-center;
+  }
+
+  .btn {
+    @apply rounded px-4 py-2 bg-marque text-white font-semibold;
+  }
+}

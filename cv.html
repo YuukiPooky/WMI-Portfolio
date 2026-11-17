@@ -5,10 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV – Erine Dumez</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="CSS/variables.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/cv.css" />
+    <script src="navigation.js" defer></script>
   </head>
 
   <body>
@@ -22,17 +23,17 @@
       <!-- EN-TÊTE -->
       <header id="haut" class="p-0">
         <section
-          class="top-bar flex flex-wrap items-center justify-center gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
+          class="top-bar center flex-wrap gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
         >
           <nav
             class="top-links flex flex-wrap items-center justify-center gap-1 md:flex-1 md:flex-nowrap md:gap-[clamp(0.5rem,1.5vw,1.5rem)]"
             aria-label="Navigation principale"
           >
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="index.html">Accueil</a>
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="cv.html">CV</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="index.html">Accueil</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="cv.html">CV</a>
             <span class="logo order-first m-0 w-full text-center text-xl font-bold italic text-white md:order-none md:mx-[clamp(1rem,3vw,3rem)] md:w-auto">Erine Dumez</span>
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="projets.html">Projets</a>
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="contact.html">Contact</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="projets.html">Projets</a>
+            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="contact.html">Contact</a>
           </nav>
         </section>
       </header>
@@ -46,7 +47,7 @@
               alt="Portrait d'Erine Dumez, étudiante en DEUST Webmaster et Métiers de l'Internet"
             />
           </figure>
-          <h1 class="text-[2.75rem] font-bold text-black">Assistante en<br />communication</h1>
+          <h1 class="text-[2.75rem] font-bold text-black tracking-wide">Assistante en<br />communication</h1>
         </div>
       </section>
     </div>
@@ -62,7 +63,7 @@
 
       <!-- FORMATIONS -->
       <section class="cv-section cv-section--markers" aria-labelledby="formations-title">
-        <h2 class="cv-section-title text-2xl font-bold" id="formations-title">Formations</h2>
+        <h2 class="cv-section-title text-2xl font-bold tracking-wide" id="formations-title">Formations</h2>
         <div class="cv-section-content card">
           <div class="cv-section-inner">
 
@@ -130,7 +131,7 @@
 
       <!-- EXPÉRIENCES -->
       <section class="cv-section cv-section--markers" aria-labelledby="experiences-title">
-        <h2 class="cv-section-title text-2xl font-bold" id="experiences-title">Expériences</h2>
+        <h2 class="cv-section-title text-2xl font-bold tracking-wide" id="experiences-title">Expériences</h2>
         <div class="cv-section-content card">
           <div class="cv-section-inner">
 
@@ -178,7 +179,7 @@
 
       <!-- COMPÉTENCES -->
       <section class="cv-section cv-section--markers" aria-labelledby="competences-title">
-        <h2 class="cv-section-title text-2xl font-bold" id="competences-title">Compétences</h2>
+        <h2 class="cv-section-title text-2xl font-bold tracking-wide" id="competences-title">Compétences</h2>
         <div class="cv-section-content card">
           <div class="cv-section-inner">
 
@@ -218,9 +219,7 @@
       <address>
         &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
         <br />
-        <a class="text-white transition-colors hover:text-blue-400" href="contact.html">Me contacter</a>
-        <br />
-        <a class="text-white transition-colors hover:text-blue-400" href="#haut">Haut de page</a>
+        <a class="text-white transition-colors hover:text-[var(--color-portfolio-background-end)]" href="#haut">Haut de page</a>
       </address>
     </footer>
   </body>

@@ -1,145 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projets – Erine Dumez</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="CSS/variables.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/projets.css">
-</head>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="CSS/variables.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/projets.css" />
+    <script src="navigation.js" defer></script>
+  </head>
 
-<body>
-
+  <body>
     <div class="portfolio-area">
-        <img class="portfolio-texture" src="Images/Général/Vagues.png" alt="" aria-hidden="true">
-        <!-- EN-TÊTE -->
-        <header id="haut" class="p-0">
-            <section
-                class="top-bar flex flex-wrap items-center justify-center gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
+      <img
+        class="portfolio-texture"
+        src="Images/Général/Vagues.png"
+        alt=""
+        aria-hidden="true"
+      />
+      <!-- EN-TÊTE -->
+      <header id="haut" class="p-0">
+        <section
+          class="top-bar center flex-wrap gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
+        >
+          <nav
+            class="top-links flex flex-wrap items-center justify-center gap-1 md:flex-1 md:flex-nowrap md:gap-[clamp(0.5rem,1.5vw,1.5rem)]"
+            aria-label="Navigation principale"
+          >
+            <a
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              href="index.html"
+              >Accueil</a
             >
-                <nav
-                    class="top-links flex flex-wrap items-center justify-center gap-1 md:flex-1 md:flex-nowrap md:gap-[clamp(0.5rem,1.5vw,1.5rem)]"
-                    aria-label="Navigation principale"
-                >
-                    <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="index.html">Accueil</a>
-                    <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="cv.html">CV</a>
-                    <span class="logo order-first m-0 w-full text-center text-xl font-bold italic text-white md:order-none md:mx-[clamp(1rem,3vw,3rem)] md:w-auto">Erine Dumez</span>
-                    <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="projets.html">Projets</a>
-                    <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-white focus-visible:bg-[var(--color-brand-focus-background)]" href="contact.html">Contact</a>
-                </nav>
-            </section>
-        </header>
-
-        <section class="portfolio-banner projects-banner" aria-label="Projets">
-            <h1 class="text-[3.5rem] font-bold text-black">Mes projets</h1>
+            <a
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              href="cv.html"
+              >CV</a
+            >
+            <span
+              class="logo order-first m-0 w-full text-center text-xl font-bold italic text-white md:order-none md:mx-[clamp(1rem,3vw,3rem)] md:w-auto"
+              >Erine Dumez</span
+            >
+            <a
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              href="projets.html"
+              >Projets</a
+            >
+            <a
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              href="contact.html"
+              >Contact</a
+            >
+          </nav>
         </section>
+      </header>
+
+      <section class="portfolio-banner projects-banner" aria-label="Portfolio">
+        <h1 class="text-[3.5rem] font-bold text-black tracking-wide">Portfolio</h1>
+      </section>
     </div>
 
     <!-- CONTENU PRINCIPAL -->
     <main class="page-content-panel [&+footer]:mt-0">
+      <section class="projects-list" aria-label="Galerie de projets">
+        <article class="project-section" aria-labelledby="project-web-title">
+          <h2
+            class="project-section-title text-2xl font-bold tracking-wide"
+            id="project-web-title"
+          >
+            Création d'un site web
+          </h2>
+          <div class="project-section-content card">
+            <div class="project-section-inner">
+              <p>
+                Réalisation d'un site web dans le cadre de ma formation en DEUST
+                Webmaster et Métiers de l’Internet. Ce projet m'a permis de
+                mettre en pratique mes connaissances en HTML, de créer une
+                structure de page organisée et de travailler la navigation entre
+                différentes pages.
+              </p>
+            </div>
+          </div>
+        </article>
 
-        <section class="projects-grid" aria-label="Galerie de projets">
+        <article
+          class="project-section"
+          aria-labelledby="project-graphic-title"
+        >
+          <h2
+            class="project-section-title text-2xl font-bold tracking-wide"
+            id="project-graphic-title"
+          >
+            Création graphique
+          </h2>
+          <div class="project-section-content card">
+            <div class="project-section-inner">
+              <p>
+                Réalisation de différents travaux graphiques dans le cadre de ma
+                formation. Ces projets m'ont permis de développer mes
+                compétences en composition, mise en page, création visuelle et
+                utilisation de la suite Adobe.
+              </p>
+            </div>
+          </div>
+        </article>
 
-            <!-- PROJET 1 -->
-            <article class="card">
+        <article
+          class="project-section"
+          aria-labelledby="project-identity-title"
+        >
+          <h2
+            class="project-section-title text-2xl font-bold tracking-wide"
+            id="project-identity-title"
+          >
+            Refonte d'une identité visuelle
+          </h2>
+          <div class="project-section-content card">
+            <div class="project-section-inner">
+              <p>
+                Réalisation d'un projet de refonte de l'identité visuelle d'une
+                association. Le travail comprenait la modernisation du logo, la
+                création de logos pour différents secteurs ainsi que la
+                réalisation d'une charte graphique.
+              </p>
 
-                <h2 class="my-[0.83em] text-2xl font-bold">Création d'un site web</h2>
-
-                <p>
-                    Réalisation d'un site web dans le cadre de ma formation en
-                    DEUST Webmaster et Métiers de l’Internet. Ce projet m'a permis
-                    de mettre en pratique mes connaissances en HTML, de créer une
-                    structure de page organisée et de travailler la navigation
-                    entre différentes pages.
-                </p>
-
-            </article>
-
-            <!-- PROJET 2 -->
-            <article class="card">
-
-                <h2 class="my-[0.83em] text-2xl font-bold">Création graphique</h2>
-
-                <p>
-                    Réalisation de différents travaux graphiques dans le cadre de
-                    ma formation. Ces projets m'ont permis de développer mes
-                    compétences en composition, mise en page, création visuelle
-                    et utilisation de la suite Adobe.
-                </p>
-
-            </article>
-
-            <!-- PROJET 3 -->
-            <article class="card">
-
-                <h2 class="my-[0.83em] text-2xl font-bold">Refonte d'une identité visuelle</h2>
-
-                <p>
-                    Réalisation d'un projet de refonte de l'identité visuelle
-                    d'une association. Le travail comprenait la modernisation
-                    du logo, la création de logos pour différents secteurs
-                    ainsi que la réalisation d'une charte graphique.
-                </p>
-
-                <figure>
-                    <img class="Ancien-Logo-Association" src="Images/Projets/LogoAssociation/AncienLogoAssociation.png"
-                        alt="Ancien logo de l'association">
-                    <figcaption>Ancien logo de l'association</figcaption>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <figure class="m-0">
+                  <img
+                    class="Ancien-Logo-Association"
+                    src="Images/Projets/LogoAssociation/AncienLogoAssociation.png"
+                    alt="Ancien logo de l'association"
+                  />
+                  <figcaption>Ancien logo de l'association</figcaption>
                 </figure>
 
-                <figure>
-                    <img class="Nouveau-Logo-Association" src="Images/Projets/LogoAssociation/NouveauLogoAssociation.png"
-                        alt="Nouveau logo de l'association">
-                    <figcaption>Nouveau logo de l'association</figcaption>
+                <figure class="m-0">
+                  <img
+                    class="Nouveau-Logo-Association"
+                    src="Images/Projets/LogoAssociation/NouveauLogoAssociation.png"
+                    alt="Nouveau logo de l'association"
+                  />
+                  <figcaption>Nouveau logo de l'association</figcaption>
                 </figure>
 
-                <figure>
-                    <img
-                        src="Images/Projets/LogosAssociationSecteurs/AnciensLogosSecteursAssociation.pdf"
-                        alt="Anciens logos des secteurs de l'association">
-                    <figcaption>Anciens logos des secteurs de l'association</figcaption>
+                <figure class="m-0">
+                  <img
+                    src="Images/Projets/LogosAssociationSecteurs/AnciensLogosSecteursAssociation.pdf"
+                    alt="Anciens logos des secteurs de l'association"
+                  />
+                  <figcaption>
+                    Anciens logos des secteurs de l'association
+                  </figcaption>
                 </figure>
+              </div>
+            </div>
+          </div>
+        </article>
 
-            </article>
-
-            <!-- PROJET 4 -->
-            <article class="card">
-
-                <h2 class="my-[0.83em] text-2xl font-bold">Communication digitale</h2>
-
-                <p>
-                    Création de contenus numériques dans le but de développer
-                    mes compétences en communication digitale. Ce projet m'a
-                    permis de travailler la présentation d'informations et la
-                    création de supports adaptés à différents usages numériques.
-                </p>
-
-            </article>
-
-        </section>
+        <article
+          class="project-section"
+          aria-labelledby="project-digital-title"
+        >
+          <h2
+            class="project-section-title text-2xl font-bold tracking-wide"
+            id="project-digital-title"
+          >
+            Communication digitale
+          </h2>
+          <div class="project-section-content card">
+            <div class="project-section-inner">
+              <p>
+                Création de contenus numériques dans le but de développer mes
+                compétences en communication digitale. Ce projet m'a permis de
+                travailler la présentation d'informations et la création de
+                supports adaptés à différents usages numériques.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
 
     <!-- PIED DE PAGE -->
-    <footer class="mt-8 bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] p-6 text-center text-white">
+    <footer
+      class="mt-8 bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] p-6 text-center text-white"
+    >
+      <p>
+        <strong>Merci d'avoir consulté mes projets.</strong>
+      </p>
 
-        <p>
-            <strong>Merci d'avoir consulté mes projets.</strong>
-        </p>
-
-        <address>
-            &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
-            <br>
-            <a class="text-white transition-colors hover:text-blue-400" href="contact.html">Me contacter</a>
-            <br>
-            <a class="text-white transition-colors hover:text-blue-400" href="#haut">Haut de page</a>
-        </address>
-
+      <address>
+        &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
+        <br />
+        <a class="text-white transition-colors hover:text-[var(--color-portfolio-background-end)]" href="#haut"
+          >Haut de page</a
+        >
+      </address>
     </footer>
-
-</body>
-
+  </body>
 </html>
