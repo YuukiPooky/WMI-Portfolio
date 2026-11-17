@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import "tailwindcss";
 
+@source inline("table border-collapse transform resize underline outline transition hover:text-blue-400 hover:text-white md:grid-cols-3");
+
 @theme {
-  --color-marque: #e11d48;
+  --color-primaire: #e11d48;
   --font-titre: "Poppins", sans-serif;
 }
 
 @utility ombre-nette {
-  box-shadow: 4px 4px 0px #000000;
+  box-shadow: 4px 4px 0px #0f172a;
 }
 
 @layer base {
   h2 {
     @apply text-2xl font-bold text-black;
+  }
+
+  h3 {
+    @apply font-titre text-lg font-bold text-slate-900;
   }
 }
 
@@ -21,7 +27,11 @@
     @apply flex items-center justify-center;
   }
 
+  .badge {
+    @apply inline-block rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-blue-800;
+  }
+
   .btn {
-    @apply rounded px-4 py-2 bg-marque text-white font-semibold;
+    @apply inline-block rounded-md bg-primaire px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90;
   }
 }

@@ -63,6 +63,7 @@
           <p>
             <label for="nom">Nom et prénom</label><br />
             <input
+              class="w-full rounded-md border border-slate-300 p-2 focus:outline-none focus:ring-2 focus:ring-primaire"
               type="text"
               id="nom"
               name="nom"
@@ -75,6 +76,7 @@
           <p>
             <label for="email">Adresse e-mail</label><br />
             <input
+              class="w-full rounded-md border border-slate-300 p-2 focus:outline-none focus:ring-2 focus:ring-primaire"
               type="email"
               id="email"
               name="email"
@@ -86,7 +88,12 @@
           <!-- MENU DÉROULANT -->
           <p>
             <label for="sujet">Objet de votre message</label><br />
-            <select id="sujet" name="sujet" required>
+            <select
+              class="w-full rounded-md border border-slate-300 p-2 focus:outline-none focus:ring-2 focus:ring-primaire"
+              id="sujet"
+              name="sujet"
+              required
+            >
               <option value="">-- Choisissez un objet --</option>
               <option value="projet-web">Projet de site web</option>
               <option value="projet-graphique">
@@ -100,6 +107,7 @@
           <p>
             <label for="message">Votre message</label><br />
             <textarea
+              class="w-full rounded-md border border-slate-300 p-2 focus:outline-none focus:ring-2 focus:ring-primaire"
               id="message"
               name="message"
               rows="6"

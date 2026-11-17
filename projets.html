@@ -64,8 +64,14 @@
 
     <!-- CONTENU PRINCIPAL -->
     <main class="page-content-panel [&+footer]:mt-0">
-      <section class="projects-list" aria-label="Galerie de projets">
-        <article class="project-section" aria-labelledby="project-web-title">
+      <section
+        class="projects-list grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        aria-label="Galerie de projets"
+      >
+        <article
+          class="project-section overflow-hidden rounded-xl bg-white shadow-md"
+          aria-labelledby="project-web-title"
+        >
           <h2
             class="project-section-title text-2xl font-bold tracking-wide"
             id="project-web-title"
@@ -74,6 +80,13 @@
           </h2>
           <div class="project-section-content card">
             <div class="project-section-inner">
+              <div
+                class="mb-3 flex flex-wrap gap-2"
+                aria-label="Compétences mobilisées"
+              >
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+              </div>
               <p>
                 Réalisation d'un site web dans le cadre de ma formation en DEUST
                 Webmaster et Métiers de l’Internet. Ce projet m'a permis de
@@ -86,7 +99,7 @@
         </article>
 
         <article
-          class="project-section"
+          class="project-section overflow-hidden rounded-xl bg-white shadow-md"
           aria-labelledby="project-graphic-title"
         >
           <h2
@@ -97,6 +110,13 @@
           </h2>
           <div class="project-section-content card">
             <div class="project-section-inner">
+              <div
+                class="mb-3 flex flex-wrap gap-2"
+                aria-label="Compétences mobilisées"
+              >
+                <span class="badge">Composition</span>
+                <span class="badge">Suite Adobe</span>
+              </div>
               <p>
                 Réalisation de différents travaux graphiques dans le cadre de ma
                 formation. Ces projets m'ont permis de développer mes
@@ -108,7 +128,7 @@
         </article>
 
         <article
-          class="project-section"
+          class="project-section overflow-hidden rounded-xl bg-white shadow-md"
           aria-labelledby="project-identity-title"
         >
           <h2
@@ -119,6 +139,13 @@
           </h2>
           <div class="project-section-content card">
             <div class="project-section-inner">
+              <div
+                class="mb-3 flex flex-wrap gap-2"
+                aria-label="Compétences mobilisées"
+              >
+                <span class="badge">Identité visuelle</span>
+                <span class="badge">Logo</span>
+              </div>
               <p>
                 Réalisation d'un projet de refonte de l'identité visuelle d'une
                 association. Le travail comprenait la modernisation du logo, la
@@ -126,41 +153,12 @@
                 réalisation d'une charte graphique.
               </p>
 
-              <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                <figure class="m-0">
-                  <img
-                    class="Ancien-Logo-Association"
-                    src="Images/Projets/LogoAssociation/AncienLogoAssociation.png"
-                    alt="Ancien logo de l'association"
-                  />
-                  <figcaption>Ancien logo de l'association</figcaption>
-                </figure>
-
-                <figure class="m-0">
-                  <img
-                    class="Nouveau-Logo-Association"
-                    src="Images/Projets/LogoAssociation/NouveauLogoAssociation.png"
-                    alt="Nouveau logo de l'association"
-                  />
-                  <figcaption>Nouveau logo de l'association</figcaption>
-                </figure>
-
-                <figure class="m-0">
-                  <img
-                    src="Images/Projets/LogosAssociationSecteurs/AnciensLogosSecteursAssociation.pdf"
-                    alt="Anciens logos des secteurs de l'association"
-                  />
-                  <figcaption>
-                    Anciens logos des secteurs de l'association
-                  </figcaption>
-                </figure>
-              </div>
             </div>
           </div>
         </article>
 
         <article
-          class="project-section"
+          class="project-section overflow-hidden rounded-xl bg-white shadow-md"
           aria-labelledby="project-digital-title"
         >
           <h2
@@ -171,6 +169,13 @@
           </h2>
           <div class="project-section-content card">
             <div class="project-section-inner">
+              <div
+                class="mb-3 flex flex-wrap gap-2"
+                aria-label="Compétences mobilisées"
+              >
+                <span class="badge">Communication digitale</span>
+                <span class="badge">Création de contenus</span>
+              </div>
               <p>
                 Création de contenus numériques dans le but de développer mes
                 compétences en communication digitale. Ce projet m'a permis de
@@ -180,6 +185,49 @@
             </div>
           </div>
         </article>
+      </section>
+
+      <section
+        class="project-gallery overflow-hidden rounded-xl bg-white shadow-md"
+        aria-labelledby="project-gallery-title"
+      >
+        <h2
+          class="project-section-title text-2xl font-bold tracking-wide"
+          id="project-gallery-title"
+        >
+          Aperçus de l'identité visuelle
+        </h2>
+        <div class="project-section-content card">
+          <div class="project-section-inner project-visuals-grid grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <figure class="m-0">
+              <img
+                class="Ancien-Logo-Association"
+                src="Images/Projets/LogoAssociation/AncienLogoAssociation.png"
+                alt="Ancien logo de l'association"
+              />
+              <figcaption>Ancien logo de l'association</figcaption>
+            </figure>
+
+            <figure class="m-0">
+              <img
+                class="Nouveau-Logo-Association"
+                src="Images/Projets/LogoAssociation/NouveauLogoAssociation.png"
+                alt="Nouveau logo de l'association"
+              />
+              <figcaption>Nouveau logo de l'association</figcaption>
+            </figure>
+
+            <figure class="m-0">
+              <img
+                src="Images/Projets/LogosAssociationSecteurs/AnciensLogosSecteursAssociation.pdf"
+                alt="Anciens logos des secteurs de l'association"
+              />
+              <figcaption>
+                Anciens logos des secteurs de l'association
+              </figcaption>
+            </figure>
+          </div>
+        </div>
       </section>
     </main>
 

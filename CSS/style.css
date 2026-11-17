@@ -240,6 +240,12 @@ body {
   padding-inline: 2.25rem;
 }
 
+.project-section-content.card {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .cv-section-inner,
 .project-section-inner {
   width: fit-content;
