@@ -9,8 +9,14 @@
       content="Contactez Erine Dumez pour un projet web, graphique ou une demande professionnelle."
     />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="Fonts/New%20Icon%20Script/New-Icon-Script-Exfont1157.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
     <link rel="stylesheet" href="dist/output.css" />
-    <script src="navigation.js?v=2026-11-19" defer></script>
   </head>
 
   <body>
@@ -27,33 +33,33 @@
       <!-- EN-TÊTE -->
       <header id="haut" class="p-0">
         <div
-          class="top-bar center flex-wrap gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
+          class="top-bar center flex-wrap gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--couleur-degrade-principal-debut)] to-[var(--couleur-degrade-principal-fin)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--ombre-navigation)] md:justify-between md:gap-4"
         >
           <nav
             class="top-links flex flex-wrap items-center justify-center gap-1 md:flex-1 md:flex-nowrap md:gap-[clamp(0.5rem,1.5vw,1.5rem)]"
             aria-label="Navigation principale"
           >
             <a
-              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--couleur-fond-portfolio-fin)] focus-visible:bg-[var(--couleur-fond-focus-navigation)]"
               href="index.html"
               >Accueil</a
             >
             <a
-              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--couleur-fond-portfolio-fin)] focus-visible:bg-[var(--couleur-fond-focus-navigation)]"
               href="cv.html"
               >CV</a
             >
             <span
-              class="logo order-first m-0 w-full text-center text-xl font-bold italic text-white md:order-none md:mx-[clamp(1rem,3vw,3rem)] md:w-auto"
+              class="logo order-first m-0 w-full text-center text-xl font-ecriture-manuscrite font-semibold text-white md:order-none md:mx-[clamp(1rem,3vw,3rem)] md:w-auto"
               >Erine Dumez</span
             >
             <a
-              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--couleur-fond-portfolio-fin)] focus-visible:bg-[var(--couleur-fond-focus-navigation)]"
               href="projets.html"
               >Projets</a
             >
             <a
-              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--couleur-fond-portfolio-fin)] focus-visible:bg-[var(--couleur-fond-focus-navigation)]"
               href="contact.html"
               >Contact</a
             >
@@ -62,7 +68,7 @@
       </header>
 
       <section class="portfolio-banner contact-banner" aria-label="Contact">
-        <h1 class="text-[3.5rem] font-bold text-black tracking-wide">
+        <h1 class="font-ecriture-manuscrite text-[3.5rem] font-normal text-black tracking-wide">
           Me contacter
         </h1>
       </section>
@@ -156,12 +162,12 @@
     </main>
 
     <!-- PIED DE PAGE -->
-    <footer class="mt-8 bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] p-6 text-center text-white">
+    <footer class="mt-8 bg-gradient-to-r from-[var(--couleur-degrade-principal-debut)] to-[var(--couleur-degrade-principal-fin)] p-6 text-center text-white">
       <address>
         &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
         <br />
         <a
-          class="text-white transition-colors hover:text-[var(--color-portfolio-background-end)]"
+          class="text-white transition-colors hover:text-[var(--couleur-fond-portfolio-fin)]"
           href="#haut"
           >Haut de page</a
         >

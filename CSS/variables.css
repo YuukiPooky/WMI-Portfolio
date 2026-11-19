@@ -1,15 +1,15 @@
 :root {
-  --color-neutral-white: #ffffff;
-  --color-body-text: #000000;
-  --color-heading-text: #000000;
-  --color-default-border: #cbd5e1;
-  --color-brand-gradient-start: #a30b37;
-  --color-brand-gradient-end: #d7124b;
-  --color-brand-focus-background: #7d082a;
-  --color-focus-ring: #60a5fa;
-  --color-navigation-shadow: rgb(80 0 25 / 32%);
-  --color-portfolio-background-start: #f7eff0;
-  --color-portfolio-background-end: #ffcaca;
-  --shadow-panel: 5px 6px 12px rgb(0 0 0 / 18%);
-  --font-family-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --couleur-blanc: #ffffff;
+  --couleur-texte: #000000;
+  --couleur-texte-titres: #000000;
+  --couleur-bordure: #cbd5e1;
+  --couleur-degrade-principal-debut: #a30b37;
+  --couleur-degrade-principal-fin: #d7124b;
+  --couleur-fond-focus-navigation: #7d082a;
+  --couleur-contour-focus: #60a5fa;
+  --ombre-navigation: rgb(80 0 25 / 32%);
+  --couleur-fond-portfolio-debut: #f7eff0;
+  --couleur-fond-portfolio-fin: #ffcaca;
+  --ombre-panneau: 5px 6px 12px rgb(0 0 0 / 18%);
+  --police-corps: system-ui, -apple-system, "Segoe UI", sans-serif;
 }

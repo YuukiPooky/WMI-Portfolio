@@ -1,7 +1,7 @@
 .cv-banner-content {
   position: absolute;
   z-index: 1;
-  top: var(--banner-title-center);
+  top: var(--position-verticale-titre-banniere);
   left: 50%;
   display: flex;
   flex-direction: column;
@@ -46,16 +46,18 @@
   }
 }
 
-.cv-summary {
-  width: calc(100% - 2rem);
-  max-width: 38rem;
-  margin: 2rem auto 0;
-  color: var(--color-neutral-white);
-}
-
+.cv-summary,
 .cv-section {
   width: calc(100% - 2rem);
   max-width: 38rem;
+}
+
+.cv-summary {
+  margin: 2rem auto 0;
+  color: var(--couleur-blanc);
+}
+
+.cv-section {
   margin: 3.5rem auto;
 }
 
@@ -82,7 +84,7 @@
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: var(--color-brand-gradient-end);
+  background-color: var(--couleur-degrade-principal-fin);
   content: "";
   transform: translateY(-50%);
 }
