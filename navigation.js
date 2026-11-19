@@ -92,6 +92,19 @@ async function navigateTo(destination, { addHistory = true, scrollY = 0 } = {}) 
 
     document.title = nextDocument.title;
     document.documentElement.lang = nextDocument.documentElement.lang;
+    const nextDescription = nextDocument.head.querySelector(
+      'meta[name="description"]',
+    );
+    if (nextDescription) {
+      const currentDescription = document.head.querySelector(
+        'meta[name="description"]',
+      );
+      if (currentDescription) {
+        currentDescription.content = nextDescription.content;
+      } else {
+        document.head.append(nextDescription.cloneNode());
+      }
+    }
     document.body.className = nextDocument.body.className;
     document.body.innerHTML = nextDocument.body.innerHTML;
 

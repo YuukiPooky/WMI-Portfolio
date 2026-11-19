@@ -25,12 +25,6 @@
   margin: 0;
 }
 
-.cv-banner-content figcaption {
-  max-width: 16rem;
-  margin-top: 0.5rem;
-  font-size: 0.75rem;
-}
-
 .photo-profil {
   width: 7rem;
   aspect-ratio: 1;

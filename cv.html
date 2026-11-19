@@ -5,49 +5,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV – Erine Dumez</title>
+    <meta
+      name="description"
+      content="Consultez le CV d’Erine Dumez : formations, expériences et compétences en communication, création graphique et développement web."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="Fonts/Poppins-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="CSS/variables.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/cv.css" />
-    <script src="navigation.js" defer></script>
+    <script src="navigation.js?v=2026-11-19" defer></script>
   </head>
 
   <body>
     <div class="portfolio-area">
-      <img
-        class="portfolio-texture"
-        src="Images/Général/Vagues.png"
-        alt=""
-        aria-hidden="true"
-      />
+      <picture aria-hidden="true">
+        <source
+          type="image/webp"
+          srcset="Images/General/Vagues-768.webp 768w, Images/General/Vagues-1600.webp 1600w"
+          sizes="100vw"
+        />
+        <img
+          class="portfolio-texture"
+          src="Images/General/Vagues.png"
+          alt=""
+          width="1600"
+          height="1600"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </picture>
       <!-- EN-TÊTE -->
       <header id="haut" class="p-0">
-        <section
+        <div
           class="top-bar center flex-wrap gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
         >
           <nav
             class="top-links flex flex-wrap items-center justify-center gap-1 md:flex-1 md:flex-nowrap md:gap-[clamp(0.5rem,1.5vw,1.5rem)]"
             aria-label="Navigation principale"
           >
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="index.html">Accueil</a>
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="cv.html">CV</a>
-            <span class="logo order-first m-0 w-full text-center text-xl font-bold italic text-white md:order-none md:mx-[clamp(1rem,3vw,3rem)] md:w-auto">Erine Dumez</span>
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="projets.html">Projets</a>
-            <a class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]" href="contact.html">Contact</a>
+            <a
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              href="index.html"
+              >Accueil</a
+            >
+            <a
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              href="cv.html"
+              >CV</a
+            >
+            <span
+              class="logo order-first m-0 w-full text-center text-xl font-bold italic text-white md:order-none md:mx-[clamp(1rem,3vw,3rem)] md:w-auto"
+              >Erine Dumez</span
+            >
+            <a
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              href="projets.html"
+              >Projets</a
+            >
+            <a
+              class="rounded px-3 py-2 font-semibold text-white no-underline transition-colors hover:text-[var(--color-portfolio-background-end)] focus-visible:bg-[var(--color-brand-focus-background)]"
+              href="contact.html"
+              >Contact</a
+            >
           </nav>
-        </section>
+        </div>
       </header>
 
       <section class="portfolio-banner cv-banner" aria-label="Présentation">
         <div class="cv-banner-content">
           <figure>
-            <img
-              class="photo-profil"
-              src="Images/CV/ErineDumez.png"
-              alt="Portrait d'Erine Dumez, étudiante en DEUST Webmaster et Métiers de l'Internet"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="Images/CV/ErineDumez-384.webp 384w, Images/CV/ErineDumez.webp 768w"
+                sizes="(min-width: 48rem) 14rem, 7rem"
+              />
+              <img
+                class="photo-profil"
+                src="Images/CV/ErineDumez.png"
+                alt="Portrait d'Erine Dumez, étudiante en DEUST Webmaster et Métiers de l'Internet"
+                width="768"
+                height="768"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
           </figure>
-          <h1 class="text-[2.75rem] font-bold text-black tracking-wide">Assistante en<br />communication</h1>
+          <h1 class="text-[2.75rem] font-bold text-black tracking-wide">
+            Assistante en<br />
+            communication
+          </h1>
         </div>
       </section>
     </div>
@@ -62,149 +117,170 @@
       </p>
 
       <!-- FORMATIONS -->
-      <section class="cv-section cv-section--markers" aria-labelledby="formations-title">
-        <h2 class="cv-section-title text-2xl font-bold tracking-wide" id="formations-title">Formations</h2>
+      <section
+        class="cv-section cv-section--markers"
+        aria-labelledby="formations-title"
+      >
+        <h2
+          class="cv-section-title text-2xl font-bold tracking-wide"
+          id="formations-title"
+        >
+          Formations
+        </h2>
         <div class="cv-section-content card">
           <div class="cv-section-inner">
+            <h3>DEUST Webmaster et Métiers de l’Internet</h3>
+            <p>
+              <strong>
+                Université du Littoral Côte d’Opale | Calais | 2026 – 2028
+              </strong>
+            </p>
+            <ul>
+              <li>Création de sites web</li>
+              <li>Bases du développement web</li>
+              <li>Maîtrise de la suite Adobe</li>
+              <li>Communication digitale</li>
+            </ul>
 
-        <h3>DEUST Webmaster et Métiers de l’Internet</h3>
-        <p>
-          <strong>
-            Université du Littoral Côte d’Opale | Calais | 2026 – 2028
-          </strong>
-        </p>
-        <ul>
-          <li>Création de sites web</li>
-          <li>Bases du développement web</li>
-          <li>Maîtrise de la suite Adobe</li>
-          <li>Communication digitale</li>
-        </ul>
+            <h3>DSP Assistant Designer Graphique Multimédia</h3>
+            <p>
+              <strong>
+                Université du Littoral Côte d’Opale | Calais | 2025 – 2026
+              </strong>
+            </p>
+            <ul>
+              <li>Maîtrise de la suite Adobe</li>
+              <li>Création graphique</li>
+              <li>Mise en page</li>
+              <li>Retouche photographique</li>
+              <li>Bases du HTML</li>
+            </ul>
 
-        <h3>DSP Assistant Designer Graphique Multimédia</h3>
-        <p>
-          <strong>
-            Université du Littoral Côte d’Opale | Calais | 2025 – 2026
-          </strong>
-        </p>
-        <ul>
-          <li>Maîtrise de la suite Adobe</li>
-          <li>Création graphique</li>
-          <li>Mise en page</li>
-          <li>Retouche photographique</li>
-          <li>Bases du HTML</li>
-        </ul>
+            <h3>Licence Humanités - Culture et Médias</h3>
+            <p>
+              <strong>
+                Université du Littoral Côte d’Opale | Dunkerque | 2024 – 2025
+              </strong>
+            </p>
+            <ul>
+              <li>Analyse et synthèse en littérature</li>
+              <li>Philosophie</li>
+              <li>Histoire de l’art</li>
+            </ul>
 
-        <h3>Licence Humanités - Culture et Médias</h3>
-        <p>
-          <strong>
-            Université du Littoral Côte d’Opale | Dunkerque | 2024 – 2025
-          </strong>
-        </p>
-        <ul>
-          <li>Analyse et synthèse en littérature</li>
-          <li>Philosophie</li>
-          <li>Histoire de l’art</li>
-        </ul>
+            <h3>DU Tremplin</h3>
+            <p>
+              <strong>
+                Université du Littoral Côte d’Opale | Dunkerque | 2023 – 2024
+              </strong>
+            </p>
+            <ul>
+              <li>Réorientation</li>
+              <li>Recherche de projet professionnel</li>
+            </ul>
 
-        <h3>DU Tremplin</h3>
-        <p>
-          <strong>
-            Université du Littoral Côte d’Opale | Dunkerque | 2023 – 2024
-          </strong>
-        </p>
-        <ul>
-          <li>Réorientation</li>
-          <li>Recherche de projet professionnel</li>
-        </ul>
-
-        <h3>Baccalauréat général</h3>
-        <p>
-          <strong>Lycée du Noordover | Grande-Synthe | 2020 – 2023</strong>
-        </p>
-        <ul>
-          <li>Arts plastiques</li>
-          <li>HLP : Humanités, Littérature et Philosophie</li>
-        </ul>
+            <h3>Baccalauréat général</h3>
+            <p>
+              <strong>Lycée du Noordover | Grande-Synthe | 2020 – 2023</strong>
+            </p>
+            <ul>
+              <li>Arts plastiques</li>
+              <li>HLP : Humanités, Littérature et Philosophie</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <!-- EXPÉRIENCES -->
-      <section class="cv-section cv-section--markers" aria-labelledby="experiences-title">
-        <h2 class="cv-section-title text-2xl font-bold tracking-wide" id="experiences-title">Expériences</h2>
+      <section
+        class="cv-section cv-section--markers"
+        aria-labelledby="experiences-title"
+      >
+        <h2
+          class="cv-section-title text-2xl font-bold tracking-wide"
+          id="experiences-title"
+        >
+          Expériences
+        </h2>
         <div class="cv-section-content card">
           <div class="cv-section-inner">
+            <h3>Bar du Camping des Dunes</h3>
+            <p>
+              <strong>
+                Employée polyvalente | Gravelines | Du 09/07/2025 au 31/08/2025
+                <br />
+                puis du 03/07/2026 au 28/08/2026
+              </strong>
+            </p>
+            <ul>
+              <li>Préparation des boissons</li>
+              <li>Gestion des paiements</li>
+              <li>Entretien du bar</li>
+            </ul>
 
-        <h3>Bar du Camping des Dunes</h3>
-        <p>
-          <strong>
-            Employée polyvalente | Gravelines |
-            Du 09/07/2025 au 31/08/2025<br />
-            puis du 03/07/2026 au 28/08/2026
-          </strong>
-        </p>
-        <ul>
-          <li>Préparation des boissons</li>
-          <li>Gestion des paiements</li>
-          <li>Entretien du bar</li>
-        </ul>
+            <h3>Association Cœur de Ville</h3>
+            <p>
+              <strong>
+                Stage | Grand-Fort-Philippe | Du 23/02/2026 au 22/06/2026
+              </strong>
+            </p>
+            <ul>
+              <li>Refonte de l’identité visuelle de l’association</li>
+              <li>Modernisation du logo de l’association</li>
+              <li>Création et modernisation des logos des différents secteurs</li>
+              <li>Création de la charte graphique</li>
+            </ul>
 
-        <h3>Association Cœur de Ville</h3>
-        <p>
-          <strong>
-            Stage | Grand-Fort-Philippe | Du 23/02/2026 au 22/06/2026
-          </strong>
-        </p>
-        <ul>
-          <li>Refonte de l’identité visuelle de l’association</li>
-          <li>Modernisation du logo de l’association</li>
-          <li>Création et modernisation des logos des différents secteurs</li>
-          <li>Création de la charte graphique</li>
-        </ul>
-
-        <h3>Restaurant Le 116</h3>
-        <p>
-          <strong>
-            Employée polyvalente | Gravelines | Du 28/06/2024 au 31/07/2024
-          </strong>
-        </p>
-        <ul>
-          <li>Prise de commandes</li>
-          <li>Conseil clients</li>
-          <li>Entretien du restaurant</li>
-        </ul>
+            <h3>Restaurant Le 116</h3>
+            <p>
+              <strong>
+                Employée polyvalente | Gravelines | Du 28/06/2024 au 31/07/2024
+              </strong>
+            </p>
+            <ul>
+              <li>Prise de commandes</li>
+              <li>Conseil clients</li>
+              <li>Entretien du restaurant</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <!-- COMPÉTENCES -->
-      <section class="cv-section cv-section--markers" aria-labelledby="competences-title">
-        <h2 class="cv-section-title text-2xl font-bold tracking-wide" id="competences-title">Compétences</h2>
+      <section
+        class="cv-section cv-section--markers"
+        aria-labelledby="competences-title"
+      >
+        <h2
+          class="cv-section-title text-2xl font-bold tracking-wide"
+          id="competences-title"
+        >
+          Compétences
+        </h2>
         <div class="cv-section-content card">
           <div class="cv-section-inner">
+            <h3>Compétences web</h3>
+            <ul>
+              <li>HTML</li>
+              <li>Création de sites web</li>
+              <li>Bases du développement web</li>
+            </ul>
 
-        <h3>Compétences web</h3>
-        <ul>
-          <li>HTML</li>
-          <li>Création de sites web</li>
-          <li>Bases du développement web</li>
-        </ul>
+            <h3>Compétences graphiques</h3>
+            <ul>
+              <li>Suite Adobe</li>
+              <li>Création graphique</li>
+              <li>Mise en page</li>
+              <li>Retouche photographique</li>
+              <li>Création d’identités visuelles</li>
+            </ul>
 
-        <h3>Compétences graphiques</h3>
-        <ul>
-          <li>Suite Adobe</li>
-          <li>Création graphique</li>
-          <li>Mise en page</li>
-          <li>Retouche photographique</li>
-          <li>Création d’identités visuelles</li>
-        </ul>
-
-        <h3>Communication digitale</h3>
-        <ul>
-          <li>Communication digitale</li>
-          <li>Création de contenus visuels</li>
-          <li>Conception de supports de communication</li>
-        </ul>
+            <h3>Communication digitale</h3>
+            <ul>
+              <li>Communication digitale</li>
+              <li>Création de contenus visuels</li>
+              <li>Conception de supports de communication</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -219,7 +295,11 @@
       <address>
         &copy; 2026 <strong>Erine Dumez</strong>. Tous droits réservés.
         <br />
-        <a class="text-white transition-colors hover:text-[var(--color-portfolio-background-end)]" href="#haut">Haut de page</a>
+        <a
+          class="text-white transition-colors hover:text-[var(--color-portfolio-background-end)]"
+          href="#haut"
+          >Haut de page</a
+        >
       </address>
     </footer>
   </body>

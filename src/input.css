@@ -1,24 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import "tailwindcss";
 
-@source inline("table border-collapse transform resize underline outline transition hover:text-blue-400 hover:text-white md:grid-cols-3");
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../Fonts/Poppins-Bold.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 @theme {
   --color-primaire: #e11d48;
   --font-titre: "Poppins", sans-serif;
 }
 
-@utility ombre-nette {
-  box-shadow: 4px 4px 0px #0f172a;
-}
-
 @layer base {
-  h2 {
-    @apply text-2xl font-bold text-black;
-  }
-
   h3 {
-    @apply font-titre text-lg font-bold text-slate-900;
+    @apply font-titre text-slate-900;
   }
 }
 
@@ -32,6 +32,11 @@
   }
 
   .btn {
-    @apply inline-block rounded-md bg-primaire px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90;
+    @apply inline-block rounded-md bg-primaire px-4 py-2 text-sm font-medium text-white hover:opacity-90;
+    transition: opacity 150ms ease, box-shadow 150ms ease;
+  }
+
+  .btn:hover {
+    box-shadow: var(--shadow-panel);
   }
 }

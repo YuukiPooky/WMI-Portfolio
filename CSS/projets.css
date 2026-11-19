@@ -1,42 +1,42 @@
 .projects-list {
-    width: calc(100% - 2rem);
-    max-width: 75rem;
-    min-width: 0;
-    margin: 3.5rem auto;
+  width: calc(100% - 2rem);
+  max-width: 75rem;
+  min-width: 0;
+  margin: 3.5rem auto;
 }
 
 .project-gallery {
-    width: calc(100% - 2rem);
-    max-width: 75rem;
-    margin: 3.5rem auto;
+  width: calc(100% - 2rem);
+  max-width: 75rem;
+  margin: 3.5rem auto;
 }
 
 .project-visuals-grid {
-    width: 100%;
+  width: 100%;
 }
 
 .project-visuals-grid figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .project-visuals-grid img {
-    width: auto;
-    max-width: 100%;
-    max-height: 12rem;
-    object-fit: contain;
+  width: auto;
+  max-width: 100%;
+  max-height: 12rem;
+  object-fit: contain;
 }
 
 .Ancien-Logo-Association {
-    width: 150px;
-    max-width: 100%;
-    height: auto;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
 }
 
 .Nouveau-Logo-Association {
-    width: 180px;
-    max-width: 100%;
-    height: auto;
+  width: 180px;
+  max-width: 100%;
+  height: auto;
 }

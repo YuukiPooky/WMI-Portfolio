@@ -53,12 +53,6 @@ body {
     list-style-type: disc;
   }
 
-  body ol {
-    margin-block: 1em;
-    padding-inline-start: 40px;
-    list-style-type: decimal;
-  }
-
   body figure {
     margin-block: 1em;
     margin-inline: 40px;
@@ -116,10 +110,7 @@ body {
 }
 
 .top-links .logo {
-  order: -1;
   flex: 0 0 100%;
-  width: 100%;
-  margin-inline: 0;
 }
 
 .portfolio-banner {
@@ -161,7 +152,6 @@ body {
 }
 
 .introduction {
-  min-height: 45vh;
   padding: 2rem;
   background-color: var(--color-neutral-white);
   box-shadow: var(--shadow-panel);
@@ -170,8 +160,6 @@ body {
 .home-content-panel .introduction {
   width: 100%;
   max-width: 48rem;
-  min-height: 0;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -306,10 +294,7 @@ body {
   }
 
   .top-links .logo {
-    order: 0;
     flex: 0 1 auto;
-    width: auto;
-    margin-inline: clamp(1rem, 3vw, 3rem);
   }
 
   .page-content-panel {

@@ -5,23 +5,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil – Erine Dumez</title>
+    <meta
+      name="description"
+      content="Portfolio d’Erine Dumez, étudiante en DEUST Webmaster et Métiers de l’Internet : parcours, compétences et projets."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="Fonts/Poppins-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="CSS/variables.css" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <script src="navigation.js" defer></script>
+    <script src="navigation.js?v=2026-11-19" defer></script>
   </head>
 
   <body>
     <div class="portfolio-area">
-      <img
-        class="portfolio-texture"
-        src="Images/Général/Vagues.png"
-        alt=""
-        aria-hidden="true"
-      />
+      <picture aria-hidden="true">
+        <source
+          type="image/webp"
+          srcset="Images/General/Vagues-768.webp 768w, Images/General/Vagues-1600.webp 1600w"
+          sizes="100vw"
+        />
+        <img
+          class="portfolio-texture"
+          src="Images/General/Vagues.png"
+          alt=""
+          width="1600"
+          height="1600"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </picture>
       <!-- EN-TÊTE -->
       <header id="haut" class="p-0">
-        <section
+        <div
           class="top-bar center flex-wrap gap-2 rounded-b-3xl bg-gradient-to-r from-[var(--color-brand-gradient-start)] to-[var(--color-brand-gradient-end)] px-[25px] py-[9px] shadow-[0_5px_12px_var(--color-navigation-shadow)] md:justify-between md:gap-4"
         >
           <nav
@@ -53,7 +75,7 @@
               >Contact</a
             >
           </nav>
-        </section>
+        </div>
       </header>
 
       <section class="portfolio-banner" aria-label="Bienvenue !">
