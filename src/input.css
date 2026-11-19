@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@import "../CSS/variables.css";
+@import "../CSS/style.css";
+@import "../CSS/cv.css";
+@import "../CSS/contact.css";
+@import "../CSS/projets.css";
 
 @font-face {
   font-family: Poppins;
